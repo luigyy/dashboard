@@ -10,8 +10,14 @@ import { itemsToOrder } from "@syncfusion/ej2/treemap";
 const Sidebar = () => {
   const activeLink = "flex items-center gap-5 pl-4 font-extrabold t-3 pb-2.5 rounded-lg text-md m-2";
   const normalLink ="flex items-center gap-4 pl-3 pt-3 pb-1.5 rounded-lg text-md m-2 text-gray-700 dark:hover:text-gray-400 hover:bg-light-gray m-2";
-  const {activeMenu, setActiveMenu} = useStateContext();
+  const {activeMenu, setActiveMenu, screenSize} = useStateContext();
 
+  const handleCloseSidebar = () => {
+    if (activeMenu && screenSize <=900) {
+      setActiveMenu(false);
+    }
+  }
+  
   return (
     <div className="ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10">
       {activeMenu && (
@@ -44,6 +50,7 @@ const Sidebar = () => {
                   <NavLink 
                   to={`/${link.name}`}
                   key={link.name}
+                  onClick={handleCloseSidebar}
                   className={({isActive}) => isActive? activeLink: normalLink}>
                    {link.icon} <span className="capitalize">{link.name}</span> 
                     
