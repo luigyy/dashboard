@@ -41,6 +41,7 @@ module.exports = {
       backgroundImage: {
         'hero-pattern':
           "url('https://i.ibb.co/MkvLDfb/Rectangle-4389.png')",
+        'ecommerce': "url('https://ipmark.com/wp-content/uploads/nuevo-modelo-de-negocio-auge-del-ecommerce-ok.jpg')"
       },
     },
   },
