@@ -3083,11 +3083,11 @@ export const dropdownData = [
   },
 ];
 export const SparklineAreaData = [
-  { x: 1, yval: 2 },
-  { x: 2, yval: 6 },
-  { x: 3, yval: 8 },
-  { x: 4, yval: 5 },
-  { x: 5, yval: 10 },
+  { x: 1, xval: 3,  yval: 200000000000 },
+  { x: 2, xval: 5,yval: 600000000000 },
+  { x: 3, xval: 4,yval: 8000000000000 },
+  { x: 4, xval: 9,yval: 100000000000000000 },
+  { x: 5, xval: 1,yval: 10000000000000000000000 },
 
 ];
 
