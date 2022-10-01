@@ -87,8 +87,7 @@ const Ecommerce = () => {
                 <p>
                   <span className="text-xl font-semibold">$18,890.00</span>
                 </p>
-                <p className="text-gray-500 mt-1">Expense</pearr
-                
+                <p className="text-gray-500 mt-1">Expense</p>
               </div>
               <div>
                 <SparklineTest />
@@ -104,17 +103,11 @@ const Ecommerce = () => {
             </div>
             {/**card left */}
             <div>
-              <Stacked width="320px" height="360px"/>
+              <Stacked width="320px" height="360px" />
             </div>
           </div>
         </div>
       </div>
-      <div>
-
-        </p>
-      </div>
-      {/**Revenue updates*/}
-
     </div>
   );
 };
